@@ -283,7 +283,7 @@ ZMK_COMBO(pipe, &kp PIPE, 18 28, DEFAULT)
 &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y  &kp U   &kp I     &kp O   &kp P
 &hml LGUI A  &hml LALT S &hml LCTRL D  &hml LSHIFT F  &kp G             &kp H  &hmr RSHIFT J   &hmr RCTRL K           &hmr LALT L           &hmr RGUI APOS
 &hml LGUI Z  &hml LALT X &hml LCTRL C  &hml LSHIFT V  &kp B             &kp N  &hmr RSHIFT M   &hmr_morph_cs RCTRL 0  &hmr_morph_dc LALT 0  &hmr RGUI FSLH
-                 &mt LSHIFT F13 &mt LGUI RET &lt L_NUM ESC              &lt L_NAV TAB &lt L_SYM SPACE &mt RSHIFT F14
+                 &mt LSHIFT F20 &mt LGUI RET &lt L_NUM ESC              &lt L_NAV TAB &lt L_SYM SPACE &mt RSHIFT F19
             >;
         };
 
