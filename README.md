@@ -4,16 +4,27 @@ Shared logical layout module for Orbita keyboards.
 
 ## Purpose
 
-Keep common keymap/layout logic in one place and let keyboard-specific modules
-(such as `tcherta` and `plenka`) include and extend it.
+Keep layers, combos, hold-taps, mouse bindings, and shared macros in one place.
+Keyboard modules include `include/orbita_layout.keymap.inc` while retaining
+their own matrix transforms, pin assignments, and hardware configuration.
 
 ## Local Development
 
-This module is intended to be used from local sources in the workspace under:
+This module is an independent Git repository and a West project. Its workspace
+path is:
 
-- `modules/zmk/orbita-layout`
+- `modules/zmk/zmk-orbita-layout`
 
-No GitHub push is required for local build/testing.
+The active Tcherta shield includes this module directly. Plenka has a compatible
+keymap on the `plenka_1` branch of `zmk-keyboard-tcherta`, but is not an active
+target until that shield is restored or merged.
+
+## Current Thumb Binding
+
+The left language-change thumb key taps `F20` and holds the right mouse button.
+The physical shield must enable `CONFIG_ZMK_POINTING=y`; Bluetooth hosts need to
+be re-paired after that option is first enabled because the HID descriptor gains
+mouse support.
 
 ## Suggested Structure
 

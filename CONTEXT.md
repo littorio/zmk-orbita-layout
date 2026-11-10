@@ -1,7 +1,7 @@
 # Project Context: zmk-orbita-layout
 
-Purpose: shared ZMK layout module used by multiple keyboards (for example
-`tcherta` and `plenka`) so logical layout changes are made once.
+Purpose: shared ZMK layout module used by Tcherta and, when its shield is
+restored, Plenka, so logical layout changes are made once.
 
 ## Scope
 
@@ -19,3 +19,6 @@ Purpose: shared ZMK layout module used by multiple keyboards (for example
 
 Keyboard modules should include shared layout files from this module while
 keeping board-specific wiring and optional hardware features local.
+
+The module is a remote-tracked West project at
+`modules/zmk/zmk-orbita-layout`.

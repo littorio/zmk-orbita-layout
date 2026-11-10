@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 #include "zmk-helpers/helper.h"
 
 // layers
@@ -272,6 +273,14 @@ ZMK_COMBO(pipe, &kp PIPE, 18 28, DEFAULT)
             bindings = <&kp>, <&skq>;
             hold-trigger-on-release;
         };
+        mkt: mouse_key_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&mkp>, <&kp>;
+        };
 
     };
 
@@ -283,7 +292,7 @@ ZMK_COMBO(pipe, &kp PIPE, 18 28, DEFAULT)
 &kp Q  &kp W  &kp E  &kp R  &kp T                                       &kp Y  &kp U   &kp I     &kp O   &kp P
 &hml LGUI A  &hml LALT S &hml LCTRL D  &hml LSHIFT F  &kp G             &kp H  &hmr RSHIFT J   &hmr RCTRL K           &hmr LALT L           &hmr RGUI APOS
 &hml LGUI Z  &hml LALT X &hml LCTRL C  &hml LSHIFT V  &kp B             &kp N  &hmr RSHIFT M   &hmr_morph_cs RCTRL 0  &hmr_morph_dc LALT 0  &hmr RGUI FSLH
-                 &mt LSHIFT F20 &mt LGUI RET &lt L_NUM ESC              &lt L_NAV TAB &lt L_SYM SPACE &mt RSHIFT F19
+                 &mkt RCLK F20  &mt LGUI RET &lt L_NUM ESC              &lt L_NAV TAB &lt L_SYM SPACE &mt RSHIFT F19
             >;
         };
 
