@@ -301,7 +301,7 @@ ZMK_COMBO(pipe, &kp PIPE, 18 28, DEFAULT)
 &kp Q          &kp W         &kp E          &kp R          &kp T              &kp K_REDO     PASS1         PASS2        PASS3      &bootloader
 &hml LGUI A    &hml LALT S   &hml LCTRL D   &hml LSHIFT F  &kp G              &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT   &caps_word
 &kp Z          &kp X         &kp C          &kp V          &kp B              &kp HOME       &kp PG_DN     &kp PG_UP     &kp END     &kp INS
-                             &kp C          PASS           &none              &kp RET        &kp BSPC      &kp DEL
+                             &kp C          PASS           &none              &none          &kp BSPC      &kp DEL
             >;
         };
 
@@ -310,7 +310,7 @@ ZMK_COMBO(pipe, &kp PIPE, 18 28, DEFAULT)
 &bootloader &kp N7     &kp N8      &kp N9       &kp RBKT            &kp Y  &kp U   &kp I    &kp O   &kp P
 &kp LT      &kp N4     &kp N5      &kp N6       &kp EQUAL           &kp H  &kp J   &kp K    &kp L   &kp N0
 &kp GRAVE   &kp N1     &kp N2      &kp N3       &kp N0              &kp N  &kp M   &kp COMMA &kp DOT &kp FSLH
-                                           &kp DOT      &kp N0      &kp MINUS  &kp RET &none &kp DEL
+                                           &kp DOT      &kp N0      &kp MINUS  &none &none &kp DEL
             >;
         };
 
