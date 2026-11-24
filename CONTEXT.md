@@ -1,7 +1,8 @@
 # Project Context: zmk-orbita-layout
 
-Purpose: shared ZMK layout module used by Tcherta and, when its shield is
-restored, Plenka, so logical layout changes are made once.
+Purpose: shared ZMK layout module used by Tcherta and Plenka, so logical layout
+changes are made once. Keyboard branch selection and workspace build workflows
+are documented in the workspace's `WORKSPACE.md`.
 
 ## Scope
 

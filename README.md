@@ -15,9 +15,9 @@ path is:
 
 - `modules/zmk/zmk-orbita-layout`
 
-The active Tcherta shield includes this module directly. Plenka has a compatible
-keymap on the `plenka_1` branch of `zmk-keyboard-tcherta`, but is not an active
-target until that shield is restored or merged.
+Both Tcherta and Plenka keymaps include this module directly. Keep this module
+on `main` when switching keyboards. See the workspace's `WORKSPACE.md` for
+keyboard branches, build commands, and local setup.
 
 ## Current Thumb Binding
 
